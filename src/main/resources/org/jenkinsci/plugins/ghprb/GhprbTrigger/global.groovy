@@ -28,7 +28,7 @@ f.section(title: descriptor.displayName) {
     f.entry(field: "displayBuildErrorsOnDownstreamBuilds", title: _("Display build errors on downstream builds?")) {
       f.checkbox() 
     }
-    f.entry(field: "requestForTestingPhrase", title: _("Request for testing phrase")) {
+    f.entry(field: "requestForTestingPhrase", title: _("[Disabled] Request for testing phrase")) {
       f.textarea(default: "Can one of the admins verify this patch?") 
     }
     f.entry(field: "whitelistPhrase", title: _("Add to white list phrase")) {

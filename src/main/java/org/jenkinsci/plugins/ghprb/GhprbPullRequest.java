@@ -165,11 +165,11 @@ public class GhprbPullRequest {
             setAccepted(true);
         } else {
             LOGGER.log(Level.INFO,
-                    "Author of #{0} {1} on {2} not in whitelist!",
+                    "Author of #{0} {1} on {2} not in whitelist! -- but I don't ask.",
                     new Object[] {id, author.getLogin(), reponame});
-            if (!containsComment(pr, getRequestForTestingPhrase())) {
-                repo.addComment(id, GhprbTrigger.getDscp().getRequestForTestingPhrase());
-            }
+            //if (!containsComment(pr, getRequestForTestingPhrase())) {
+            //    repo.addComment(id, GhprbTrigger.getDscp().getRequestForTestingPhrase());
+            //}
         }
 
         LOGGER.log(Level.INFO,
